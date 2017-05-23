@@ -1,0 +1,124 @@
+/*功能讲解视频*/
+.vio .caption{
+    height: 48px;
+    padding-top:60px;
+}
+.vio .caption h3{
+    font:18px  "微软雅黑";
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+}
+.vio .vio-con{
+    height: 500px;
+    background-color: #1a1a1a;
+}
+.vio-con .vio-con-left{
+    width: 600px;
+    height: 100%;
+    background-color: black;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding:20px 0;
+    position: relative;
+}
+.vio-con .vio-con-right{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left:600px;
+}
+.vio-con-right .welcome{
+    height: 56px;
+}
+.vio-con-right .welcome h4{
+    width: 50%;
+    height: 56px;
+    display: block;
+    background-color: #333333;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    color: #e93030;
+}
+.vio-con-right .vio-detail{
+    overflow-y: scroll;
+    height: 444px;
+}
+.vio-con-right .vio-detail ul{
+    height: 520px;
+    background-color: #333;
+}
+.vio-con-right .vio-detail ul>li{
+    display: inline-block;
+    width: 100%;
+    height: 72px;
+    background-color: #4d4d4d;
+    margin-bottom:4px;
+}
+.vio-detail ul>li a{
+    display: block;
+    height: 26px;
+    text-overflow: ellipsis;
+    padding-left:50px;
+    color: #e0e0e0;
+    font-size: 12px;
+    padding-top:10px;
+    white-space: nowrap;
+}
+.vio-detail ul>li a:hover{
+    text-decoration: underline #e0e0e0;
+}
+.vio-detail ul>li p{
+    display: block;
+    height: 36px;
+    text-align: end;
+    color: #e0e0e0;
+    font-size: 12px;
+    padding-right: 30px;
+}
+.vio-detail ul>li p span{
+    color: #e93030;
+}
+/*功能描述*/
+.description p{
+    display: inline-block;
+    height: 84px;
+    margin:30px 0;
+    color: #4C4C4C;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    line-height: 28px;
+}
+.description p span{
+    font-weight: 700;
+    font-size: 12px;
+}
+/*视频链接*/
+.vio-link{
+    height: 440px;
+    background-color: #333;
+    margin-bottom:90px;
+}
+.vio-link ul{
+    width: 100%;
+}
+.vio-link ul>li{
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin:30px 14px 0 0;
+}
+.vio-link ul>li p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+}
+.vio-link ul>li:first-child,
+.vio-link ul>li:nth-child(6){
+    margin-left:20px;
+}
+.vio-link ul>li:nth-child(7),
+.vio-link ul>li:nth-child(6){
+    margin-top:14px;
+}

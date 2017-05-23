@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--视口-->
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.5"/>
+    <title>手机端宣传页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel=stylesheet type=text/css href="http://www.jz51598.com//css/common1.css">
+    <link rel="stylesheet" href="http://jz5158.com/Index/Public/js/layer/skin/layer.css">
+</head>
+<body>
+<script>
+	function tongji(){
+		//移动访客百分百可以获取移动手机号，月1000条//
+		document.write("<script type='text/javascript' src='http://zoosnet110001212.emmyma.com/images/9711576_stat/baidubridge'><\/script>");
+	}
+	tongji()
+</script>
+<div class="container">
+    <div class="wrap">
+        <div class="page page1">
+            <img src="./images/01.jpg" alt="">
+        </div>
+        <!--第一屏注册-->
+        <div class="register">
+            <div>
+                <div  class="white1"> <input type="text"  placeholder="输入姓名" id="user1"></div>
+                <div  class="white2"> <input type="text"  placeholder="手机号码" id="tel1"></div>
+            </div>
+            <button id="btn1">注册</button>
+        </div>
+        <div class="page page2">
+            <img src="./images/02.jpg" alt="">
+        </div>
+        <div class="page page3">
+            <img src="./images/03.jpg" alt="">
+        </div>
+        <div class="page page4">
+            <img src="./images/04.jpg" alt="">
+        </div>
+        <div class="page page5">
+            <img src="./images/05.jpg" alt="">
+        </div>
+        <div class="page page6">
+            <img src="./images/06.jpg" alt="">
+        </div>
+        <div class="page page7">
+            <img src="./images/07.jpg" alt="">
+        </div>
+        <!--领取-->
+        <div class="receive">
+            <div><input type="text" placeholder="输入姓名" id="user2"></div>
+            <div class="white"><input type="text" placeholder="手机号码" id="tel2"></div>
+            <button id="btn2">免费领取</button>
+        </div>
+        <div class="page page9">
+            <img src="./images/09.jpg" alt="" style="display: block">
+        </div>
+        <!--联系客服-->
+        <div class="contact">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2852506887&site=qq&menu=yes">
+                <!--<span></span>-->
+            </a>
+        </div>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="http://jz5158.com/Index/Public/js/layer/layer.js"></script>
+<script src="http://jz5158.com/Index/Public/js/layout.js"></script>
+</body>
+<script>
+	$('#btn1').click(function(){
+
+        var rname=$("#user1").val();
+        var phone=$("#tel1").val();
+
+        if(rname==""){
+            layer.msg('名称不能为空…',{icon:2});setTimeout(function(){},2000);return false;
+        }
+
+        if(phone==""){
+            layer.msg('手机不能为空…',{icon:2});setTimeout(function(){},2000);return false;
+        }
+
+        var data = {
+            "phone":phone,
+            "rname":rname,
+            "id":'0',
+			"hosts":"jz51598"
+        };
+
+
+        $.ajax({
+            url: 'http://jz5158.com/index.php/bing.html',
+            type: 'POST',
+            dataType: "json",
+            data:data,
+            success:function (data) {
+                if       (data.error==0){
+                    layer.msg('提交成功',{icon:1});
+                   /* setTimeout(function(){
+                        window.location.href=data.msg;
+                    },1000);*/
+					$("#user1").val("");
+					$("#tel1").val("");
+                }else if (data.error==1){
+                    layer.msg(data.msg,{icon:2});
+                }
+            }
+        });
+
+    });
+	$('#btn2').click(function(){
+
+        var rname=$("#user2").val();
+        var phone=$("#tel2").val();
+
+        if(rname==""){
+            layer.msg('名称不能为空…',{icon:2});setTimeout(function(){},2000);return false;
+        }
+
+        if(phone==""){
+            layer.msg('手机不能为空…',{icon:2});setTimeout(function(){},2000);return false;
+        }
+
+        var data = {
+            "phone":phone,
+            "rname":rname,
+            "id":'0',
+			"hosts":"jz51598"
+        };
+
+        $.ajax({
+            url: 'http://jz5158.com/index.php/bing.html',
+            type: 'POST',
+            dataType: "json",
+            data:data,
+            success:function (data) {
+                if (data.error==0){
+                    layer.msg('提交成功',{icon:1});
+                   $("#user2").val("");
+					$("#tel2").val("");
+                }else if (data.error==1){
+                    layer.msg(data.msg,{icon:2});
+                }
+            }
+        });
+
+    });
+</script>
+</html>

@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(255,255,255);
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    height: 2000px;
+}
+.advert{
+    height: 350px;
+    width: 100%;
+    background: url(../images/download-banner.jpg) no-repeat;
+    background-size: 100%;
+}
+.down-con p:first-child{
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.down-con p:nth-child(2){
+    display: inline-block;
+    float: right;
+    width: 500px;
+    height: 30px;
+    text-align: end;
+    font-size: 14px;
+}
+.down-info{
+    height: 340px;
+    margin-top: 10px;
+}
+/*软件下载部分*/
+.down-info .summary{
+    height: 100%;
+    width: 25%;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    float: left;
+}
+.down-info .summary h4,
+.market .summary h4{
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom:1px solid #e4e4e4 ;
+}
+.down-info .summary p
+,.market .summary p{
+    color:#808080;
+    padding:28px 17px;
+    line-height: 22px;
+}
+/*软件部分*/
+.down-info .software{
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+.down-info .software ul{
+    width: 100%;
+    height: 100%;
+}
+.down-info .software li
+{
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-right: 1px solid #e4e4e4;
+    border-top:1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+.down-info .software li p:nth-child(1),
+.market  .software li p:nth-child(1){
+    margin-top:12px;
+    color: red;
+    margin-left: 20px;
+}
+.down-info .software li p:nth-child(2) a
+,.market  .software li a{
+    display: inline-block;
+    margin:30px 20px 30px 20px;
+    color: #666;
+}
+.down-info .software li:nth-child(3),
+.down-info .software li:nth-child(4)
+{
+    border-bottom: 1px solid #e4e4e4;
+}
+.down-info .software li p:nth-child(3),
+.down-info .software li p:nth-child(4),
+.market  .software li p:nth-child(3),
+.market  .software li  p:nth-child(4)
+{
+    margin-left:20px;
+    line-height: 24px;
+}
+/*行情软件*/
+.market{
+    height: 170px;
+    width: 100%;
+ margin-top: 90px;
+}
+.market1{
+    margin-top:50px;
+}
+.market2{
+    margin-bottom: 90px;
+}
+.market .summary{
+    width: 62.5%;
+    float: left;
+    height: 100%;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+.market .software{
+    width: 37.5%;
+    float: right;
+    height: 100%;
+}
+.market  .software ul{
+    width: 100%;
+    height: 100%;
+}
+.market  .software li{
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    margin-left:-1px;
+}
+.market .down-con{
+    margin-bottom:10px;
+
+}

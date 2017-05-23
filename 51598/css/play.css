@@ -1,0 +1,145 @@
+/*支付信息*/
+.play{
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-top: 40px;
+}
+.play .play-t{
+    width: 1000px;
+    padding:40px 18px 0;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    -moz-box-shadow:0 0 5px #e7e7e7;
+    -webkit-box-shadow:0 0 5px #e7e7e7;
+    box-shadow:0 0 5px #e7e7e7;
+    box-sizing: border-box;
+}
+.play .product-info{
+    height: 254px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-top: 30px;
+}
+.play .product-info .money{
+    width: 46px;
+    height: 18px;
+    border: 1px solid #ccc;
+    margin-top: 9px;
+    text-align: center;
+}
+.play-t .product-info p b{
+    width: 47px;
+    height: 35px;
+    position: relative;
+}
+.play .product-info .num{
+    width: 38px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+    padding-left:6px;
+}
+/*购买数量*/
+.play-t .product-info p b>a img{
+    position: absolute;
+    right: 4px;
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+}
+.play-t .product-info p .up{
+    top: 1px;
+}
+.play-t .product-info p .down{
+    top: 13px;
+}
+.play .play-t .product-info p:nth-child(4)>input{
+    vertical-align: middle;
+}
+
+.play .play-t .product-info p,
+.play .play-t .proson-info p{
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+.play  p span{
+    display: inline-block;
+    text-align: end;
+    width: 85px;
+    height: 35px;
+    margin-right: 10px;
+}
+.play .play-t .proson-info{
+    height: 490px;
+}
+.play .play-t .proson-info input{
+    width: 160px;
+    height: 26px;
+    margin-top: 4px;
+    padding: 0 9px;
+    border: 1px solid #ccc;
+}
+.play .play-t .proson-info .long{
+    width: 491px;
+}
+.play .play-t .proson-info .long1{
+    margin:18px 0 18px 98px ;
+}
+
+.play .inner p.one{
+    color: #c41e1e;
+    line-height: 44px;
+}
+.play .play-t .proson-info #check{
+    width: 14px;
+    height: 12px;
+}
+.play .play-t .proson-info .check1{
+    margin-top: -10px;
+    margin-bottom:10px;
+}
+.play .play-t #nextStep{
+    width: 148px;
+    height: 36px;
+    background-color: #e93030;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*支付账户*/
+.play .play-b{
+    height: 390px;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    -moz-box-shadow:0 0 5px #e7e7e7;
+    -webkit-box-shadow:0 0 5px #e7e7e7;
+    box-shadow:0 0 5px #e7e7e7;
+    box-sizing: border-box;
+    margin-top: 38px;
+}
+.play .play-b p,.play .play-b h4{
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    font-size: 12px;
+    padding-left: 18px;
+}
+.play .play-b h4{
+    color: #e93030;
+    margin-top: 15px;
+}
+.play .play-b p:first-child{
+    margin-top: 70px;
+}
+.play .footer{
+    margin-top: 40px;
+}
+.play .footer .footer-b{
+    color:#666;
+    font-size: 12px;
+}
+.play .footer .footer-b a{
+    color:#666;
+    font-size: 12px;
+}

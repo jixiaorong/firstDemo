@@ -1,0 +1,166 @@
+/*初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    color: #b2b2b2;
+    font:16px "微软雅黑"
+}
+/*!* 大屏的适配的 媒体查询代码 >1200px *!*/
+/*@media screen and (min-width: 1200px) {*/
+    /*html,body{*/
+        /*font-size: 50px;*/
+    /*}*/
+/*}*/
+/*!* 中等屏幕  992-1200*!*/
+/*@media screen and (min-width: 992px) and (max-width: 1200px) {*/
+   /*html,body{*/
+       /*font-size: 30px;*/
+   /*}*/
+/*}*/
+/*!*!* 小屏幕  768-992 pad*!*!*/
+/*!*@media screen and (min-width: 768px) and (max-width: 992px) {*!*/
+    /*!*html,body{*!*/
+        /*!*font-size: 14px;*!*/
+    /*!*}*!*/
+/*!*}*!*/
+/*!*!* 超小屏幕  <768px 手机*!*!*/
+/*!*@media screen and  (max-width: 768px) {*!*/
+    /*!*html,body{*!*/
+        /*!*font-size: 12px;*!*/
+    /*!*}*!*/
+/*!*}*!*/
+
+/*内容部分*/
+.container>.wrap>div{
+    width: 100%;
+}
+.container>.wrap>div>img{
+    width: 100%;
+}
+/*注册*/
+.register{
+    background: url(../images/08.jpg);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.register>div{
+    margin:0 auto;
+    margin-top: -10px;
+    text-align: center;
+    width: 20rem;
+}
+.register .white1,
+.register .white2{
+    background-color: #fff;
+    border-radius: 0.39rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin-top: 20px;
+}
+.register .white1{
+    float: left;
+}
+.register .white2{
+    float: right;
+}
+.register>div input{
+    width: 9.5rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    padding-left:2rem;
+    box-sizing: border-box;
+
+}
+.register>div .white1>input{
+    background: url(../images/person.jpg) no-repeat ;
+    background-size: contain;
+    background-position: 0 0;
+
+}
+.register>div .white2>input{
+    background: url(../images/phone.jpg) no-repeat ;
+    background-size: contain;
+    background-position: 0 0;
+}
+.receive button,
+.register button{
+    border-style:none;
+}
+.receive button,
+.receive input,
+.register button{
+    line-height:2.9rem;
+    height: 2.9rem;
+    border-radius: 0.39rem;
+    background-color: #f6a812;
+}
+.register button{
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #261817;
+    margin-top: 1.2rem;
+}
+.page2{
+    margin-top: -10px;
+}
+.page7{
+    margin-top: -5px;
+}
+/*免费领取*/
+.receive{
+    background: url(../images/08.jpg);
+    text-align: center;
+    padding-top:10px;
+    margin-top: -10px;
+    padding-bottom:4px;
+}
+.receive>div{
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 0.39rem;
+}
+.receive>div:first-child{
+    margin-bottom:1rem;
+}
+.receive input:first-child{
+
+    background: url(../images/person.jpg) no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+.receive>div:nth-child(2)>input{
+    background: url(../images/phone.jpg) no-repeat left top;
+    background-position: 0 0;
+    background-size: contain;
+}
+.receive input{
+    padding-left:2.8rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.receive button,.receive input{
+    width: 17rem;
+}
+.receive button{
+    margin-top:2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/*联系客服*/
+.contact a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/1.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom:1rem;
+    right: 1rem;
+}
